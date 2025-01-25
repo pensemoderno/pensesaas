@@ -1,0 +1,99 @@
+{
+  "projectName": "Pense SaaS",
+  "styleFile": "/css/style.css",
+  "assetsFolder": "/assets",
+  "designFramework": "bootstrap5",
+  "frameworks": [
+    {
+      "name": "fontawesome_5",
+      "type": "cdn"
+    },
+    {
+      "name": "bootstrap5",
+      "type": "local"
+    },
+    {
+      "name": "appConnect",
+      "type": "local"
+    }
+  ],
+  "hostingType": "docker",
+  "projectServerModel": "node",
+  "runtime": "capacitor",
+  "webRootFolder": "/public",
+  "useRouting": true,
+  "addBase": true,
+  "routingHandler": "node",
+  "projectLinksType": "site",
+  "targets": [
+    {
+      "name": "Development",
+      "remoteURL": "http://localhost:8100",
+      "webServerPort": 8100,
+      "webServerLang": "node",
+      "targetType": "docker",
+      "webServer": "node",
+      "NodeVersion": "lts",
+      "NodeOS": "alpine",
+      "webLoggingMaxFiles": "5",
+      "webLoggingMaxFileSize": "10m",
+      "databaseLoggingMaxFiles": "5",
+      "databaseLoggingMaxFileSize": "10m",
+      "dockerTimezone": "America/Sao_Paulo",
+      "databaseType": "postgres",
+      "postgresVersion": "16.6.x",
+      "databasePort": 9906,
+      "postgres_rootName": "db_user",
+      "postgres_rootPassword": "FulJk7PR",
+      "postgres_databaseName": "pense_saas",
+      "NodeImageType": "slim"
+    },
+    {
+      "name": "Production",
+      "remoteURL": "http://147.93.70.90",
+      "webServerPort": 80,
+      "webServerLang": "node",
+      "targetType": "docker",
+      "webServer": "node",
+      "NodeVersion": "lts",
+      "NodeOS": "alpine",
+      "webLoggingMaxFiles": "5",
+      "webLoggingMaxFileSize": "10m",
+      "databaseLoggingMaxFiles": "5",
+      "databaseLoggingMaxFileSize": "10m",
+      "dockerTimezone": "America/Sao_Paulo",
+      "databaseType": "postgres",
+      "postgresVersion": "16.6.x",
+      "databasePort": 9906,
+      "postgres_rootName": "db_user",
+      "postgres_rootPassword": "FulJk7PR",
+      "postgres_databaseName": "pense_saas",
+      "usage": "production",
+      "dockerType": "remote",
+      "dockerProtocol": "ssh",
+      "dockerHost": "147.93.70.90",
+      "dockerSshUser": "root",
+      "dockerServerName": "custom / ServerPenseModerno",
+      "dockerProjectName": "pense_saas__production",
+      "NodeImageType": "slim"
+    }
+  ],
+  "activeTarget": "Production",
+  "projectType": "web",
+  "userUploadsFolder": "/uploads",
+  "extensions": [],
+  "resources": {
+    "providers": {
+      "custom": {
+        "server": {
+          "ServerPenseModerno": {
+            "ip_address": "147.93.70.90",
+            "user": "root",
+            "access": true,
+            "services": {}
+          }
+        }
+      }
+    }
+  }
+}

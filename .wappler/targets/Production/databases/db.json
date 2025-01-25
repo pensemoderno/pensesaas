@@ -1,0 +1,39 @@
+{
+  "direct": true,
+  "type": "postgres",
+  "connection": {
+    "host": "147.93.70.90",
+    "port": 9906,
+    "user": "db_user",
+    "password": "FulJk7PR",
+    "database": "pense_saas"
+  },
+  "schema": {
+    "tables": {
+      "cars": {
+        "db": {
+          "schema": "public"
+        }
+      },
+      "countries": {
+        "db": {
+          "schema": "public"
+        }
+      },
+      "images": {
+        "db": {
+          "schema": "public"
+        }
+      },
+      "users": {
+        "db": {
+          "schema": "public"
+        }
+      }
+    },
+    "views": {},
+    "schemas": [
+      "public"
+    ]
+  }
+}

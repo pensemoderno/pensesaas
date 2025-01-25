@@ -1,0 +1,239 @@
+{
+  "direct": true,
+  "type": "postgres",
+  "connection": {
+    "host": "127.0.0.1",
+    "port": 9906,
+    "user": "db_user",
+    "password": "FulJk7PR",
+    "database": "pense_saas"
+  },
+  "schema": {
+    "schemas": [
+      "public"
+    ],
+    "tables": {
+      "cars": {
+        "db": {
+          "schema": "public"
+        },
+        "columns": {
+          "id": {
+            "db": {
+              "type": "increments",
+              "default": "",
+              "primary": true,
+              "unique": true,
+              "nullable": false
+            }
+          },
+          "make": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 10,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "model": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 12,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "year": {
+            "db": {
+              "type": "integer",
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          }
+        }
+      },
+      "countries": {
+        "db": {
+          "schema": "public"
+        },
+        "columns": {
+          "id": {
+            "db": {
+              "type": "increments",
+              "default": "",
+              "primary": true,
+              "unique": true,
+              "nullable": false
+            }
+          },
+          "country_code": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 2,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "country_name": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 38,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          }
+        }
+      },
+      "images": {
+        "db": {
+          "schema": "public"
+        },
+        "columns": {
+          "id": {
+            "db": {
+              "type": "increments",
+              "default": "",
+              "primary": true,
+              "unique": true,
+              "nullable": false
+            }
+          },
+          "image": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 30,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "description": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 20,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "category": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 12,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "author": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 18,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "date": {
+            "db": {
+              "type": "date",
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          }
+        }
+      },
+      "users": {
+        "db": {
+          "schema": "public"
+        },
+        "columns": {
+          "id": {
+            "db": {
+              "type": "increments",
+              "default": "",
+              "primary": true,
+              "unique": true,
+              "nullable": false
+            }
+          },
+          "first_name": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 8,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "last_name": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 10,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "gender": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 6,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "email": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 25,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "company": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 29,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          },
+          "avatar": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 25,
+              "primary": false,
+              "unique": false,
+              "nullable": true
+            }
+          }
+        }
+      }
+    },
+    "views": {}
+  }
+}
